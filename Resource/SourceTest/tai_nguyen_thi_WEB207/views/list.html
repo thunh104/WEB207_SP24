@@ -1,0 +1,35 @@
+<div class="card mt-5">
+    <h4 class="card-header">{{titleList}}</h4>
+    <div class="card-body">
+        <a href="#!products/add">
+            <button class="btn btn-success" style="margin-left: 1080px;">+ Thêm sản phẩm</button>
+        </a>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Mã sản phẩm</th>
+                <th scope="col">Tên sản phẩm</th>
+                <th scope="col">Loại</th>
+                <th scope="col">Giá</th>
+                <th scope="col">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in listProduct track by $index">
+                <td>{{$index + 1}}</td>
+                <td>{{item.ma_sp}}</td>
+                <td>{{item.ten}}</td>
+                <td>{{item.loai}}</td>
+                <td>{{item.gia}}</td>
+                <td>
+                    <a href="#!products/detail/{{item.id}}">
+                        <button class="btn btn-primary">Chi tiết</button>
+                    </a>
+                    <button ng-click="deleteProduct(item.id)" class="btn btn-danger">Xóa</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>

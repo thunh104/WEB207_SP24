@@ -1,0 +1,73 @@
+{
+    "chuyenbay": [
+        {
+            "ma": "CB01",
+            "diemxuatphat": "Hà Nội",
+            "diemden": "TP.Hồ Chí Minh",
+            "gia": "990000",
+            "luongkhach": 10000
+        },
+        {
+            "ma": "CB02",
+            "diemxuatphat": "TP Hồ Chí Minh",
+            "diemden": "Hà Nội",
+            "gia": "1990000",
+            "luongkhach": 12000
+        },
+        {
+            "ma": "CB03",
+            "diemxuatphat": "Hà Nội",
+            "diemden": "Đà Nẵng",
+            "gia": "890000",
+            "luongkhach": 10000
+        },
+        {
+            "ma": "CB04",
+            "diemxuatphat": "Hà Nội",
+            "diemden": "Nha Trang",
+            "gia": "790000",
+            "luongkhach": 80000
+        }
+    ],
+    "Danhsachdatve": [
+        {
+            "ma": "DV01",
+            "diemxuatphat": "Hà Nội",
+            "diemden": "Nha Trang",
+            "Giobay": "09:00",
+            "HoTen": "Nguyễn Thùy Linh",
+            "ngaysinh": "21-09-2011",
+            "sdt": "0862282195",
+            "dantoc": "Kinh",
+            "sochungminh": "033204004118",
+            "ngaycap": "02-11-2021",
+            "noicap": "Hưng Yên"
+        },
+        {
+            "ma": "DV02",
+            "diemxuatphat": "Hà Nội",
+            "diemden": "TP.Hồ Chí Minh",
+            "Giobay": "11:00",
+            "HoTen": "Nguyễn Hồng Lĩnh",
+            "ngaysinh": "21-08-1994",
+            "sdt": "0862282194",
+            "dantoc": "Kinh",
+            "sochungminh": "03320400414",
+            "ngaycap": "02-11-2021",
+            "noicap": "Hà Nội"
+        },
+        {
+            "ma": "DV03",
+            "diemxuatphat": "TP>Hồ Chí Minh",
+            "diemden": "Hà Nội",
+            "Giobay": "21:00",
+            "HoTen": "Nguyễn Hồng Ánh",
+            "ngaysinh": "21-08-2004",
+            "sdt": "0862282194",
+            "dantoc": "Kinh",
+            "sochungminh": "033204004148",
+            "ngaycap": "02-11-2021",
+            "noicap": "Hưng Yên"
+        }
+    ]
+}

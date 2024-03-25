@@ -1,0 +1,28 @@
+<div class="card mt-5">
+    <h4 class="card-header">{{titleAdd}}</h4>
+    <div class="card-body">
+        <form ng-submit="createProduct()">
+            <label for="" class="form-label">Mã sản phẩm:</label>
+            <input type="text" class="form-control" ng-model="product.ma_sp">
+            <p ng-if="check.ma_sp" class="text-danger">Vui lòng nhập lại mã sản phẩm</p>
+
+            <label for="" class="form-label">Tên sản phẩm:</label>
+            <input type="text" class="form-control" ng-model="product.ten">
+            <p ng-if="check.ten" class="text-danger">Vui lòng nhập lại tên sản phẩm</p>
+
+            <label for="" class="form-label">Thể loại:</label>
+            <select class="form-select" aria-label="Default select example" ng-model="product.loai">
+                <option value="Đồ nam">Đồ nam</option>
+                <option value="Đồ nữ">Đồ nữ</option>
+            </select>
+            <p ng-if="check.loai" class="text-danger">Vui lòng chọn lại thể loại</p>
+
+            <label for="" class="form-label">Giá tiền:</label>
+            <input type="text" class="form-control" ng-model="product.gia">
+            <p ng-if="check.gia" class="text-danger">Vui lòng nhập lại giá sản phẩm</p>
+
+            <button class="btn btn-light mt-5" style="margin-left: 560px;" type="reset">Reset</button>
+            <button class="btn btn-success mt-5" type="submit">Thêm mới</button>
+        </form>
+    </div>
+</div>

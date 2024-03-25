@@ -1,0 +1,36 @@
+<div class="card mt-4">
+  <h3 class="card-header">{{titleList}}</h3>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Họ và tên</th>
+          <th scope="col">Số điện thoại</th>
+          <th scope="col">Email</th>
+          <th scope="col">Chức vụ</th>
+          <th scope="col">Ngày sinh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in listStaff track by $index">
+          <td>{{$index + 1}}</td>
+          <td>{{item.hoTen}}</td>
+          <td>{{item.sdt}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.chuc_vu == 1 ? "Nhân viên" : (item.chuc_vu == 2 ? "Trưởng phòng" : "Giám đốc")}}</td>
+          <td>{{item.ngay_sinh | date : 'dd/MM/yyyy'}}</td>
+          <td>
+            <a href="#!/detail/{{item.id}}">
+              <button class="btn btn-warning">Xem chi tiết</button>
+            </a>
+            <button class="btn btn-danger" ng-click="deleteStaff(item.id)">Xóa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="#!add">
+      <button class="btn btn-outline-success">Thêm mới nhân viên</button>
+    </a>
+  </div>
+</div>

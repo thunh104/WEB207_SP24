@@ -1,0 +1,29 @@
+<div class="card mt-4">
+  <h3 class="card-header">{{titleDetail}}</h3>
+  <div class="card-body">
+    <form>
+      <label for="" class="form-label">Họ và tên</label>
+      <input type="text" class="form-control" ng-model="staff.hoTen" disabled>
+
+      <label for="" class="form-label">Số điện thoại</label>
+      <input type="text" class="form-control" ng-model="staff.sdt" disabled>
+
+      <label for="" class="form-label">Email</label>
+      <input type="text" class="form-control" ng-model="staff.email" disabled>
+      <label for="" class="form-label">Chức vụ</label>
+      <select class="form-select" aria-label="Default select example" ng-model="staff.chuc_vu" disabled>
+        <option selected>Lựa chọn</option>
+        <option value="1">Nhân viên</option>
+        <option value="2">Trưởng phòng</option>
+        <option value="3">Giám đốc</option>
+      </select>
+
+      <label for="" class="form-label">Ngày sinh</label>
+      <input type="date" class="form-control" ng-model="staff.ngay_sinh" disabled>
+
+      <a href="#!update/{{staff.id}}">
+        <button class="btn btn-outline-success mt-4">Chỉnh sửa thông tin</button>
+      </a>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="card mt-5">
+    <h4 class="card-header">{{titleDetail}}</h4>
+    <div class="card-body">
+        <form>
+            <label for="" class="form-label">Mã sản phẩm:</label>
+            <input type="text" class="form-control" ng-model="product.ma_sp" disabled>
+
+            <label for="" class="form-label">Tên sản phẩm:</label>
+            <input type="text" class="form-control" ng-model="product.ten" disabled>
+
+            <label for="" class="form-label">Thể loại:</label>
+            <select class="form-select" aria-label="Default select example" ng-model="product.loai" disabled>
+                <option value="Đồ nam">Đồ nam</option>
+                <option value="Đồ nữ">Đồ nữ</option>
+              </select>
+
+            <label for="" class="form-label">Giá tiền:</label>
+            <input type="text" class="form-control" ng-model="product.gia" disabled>
+
+            <button class="btn btn-outline-danger mt-5" style="margin-left: 560px;">Quay lại</button>
+            <a href="#!products/edit/{{product.id}}">
+              <button class="btn btn-warning mt-5">Chỉnh sửa</button>
+            </a>
+        </form>
+    </div>
+  </div>

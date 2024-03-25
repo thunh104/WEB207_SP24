@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Demo thi</title>
+</head>
+
+<body ng-app="myApp">
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#!/list">Danh sách</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/add">Thêm mới</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div ng-view></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./libs/angular.min.js"></script>
+    <script src="./libs/angular-route.min.js"></script>
+    <script src="./controllers/listController.js"></script>
+    <script src="./controllers/addController.js"></script>
+    <script src="./controllers/detailController.js"></script>
+    <script src="./controllers/updateController.js"></script>
+</body>
+<script>
+    let myApp = angular.module('myApp', ['ngRoute']);
+    myApp.config(function ($routeProvider) {
+        $routeProvider
+            .when(
+                '/list',
+                {
+                    templateUrl: 'views/list.html',
+                    controller: listController
+                }
+            )
+            .when(
+                '/add',
+                {
+                    templateUrl: 'views/add.html',
+                    controller: addController
+                }
+            )
+            .when(
+                '/detail/:id',
+                {
+                    templateUrl: 'views/detail.html',
+                    controller: detailController
+                }
+            )
+            .when(
+                '/update/:id',
+                {
+                    templateUrl: 'views/update.html',
+                    controller: updateController
+                }
+            )
+            .otherwise({
+                redirectTo: '/list'
+            })
+    })
+</script>
+
+</html>

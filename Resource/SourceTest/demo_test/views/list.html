@@ -1,0 +1,36 @@
+<div class="card mt-4">
+    <h3 class="card-header">{{titleList}}</h3>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Tiêu đề</th>
+                <th scope="col">Nội dung</th>
+                <th scope="col">Tác giả</th>
+                <th scope="col">Thể loại</th>
+                <th scope="col">Ngày đăng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in listPost track by $index">
+                <td>{{$index + 1}}</td>
+                <td>{{item.tieu_de}}</td>
+                <td>{{item.noi_dung}}</td>
+                <td>{{item.tac_gia}}</td>
+                <td>{{item.the_loai == 1 ? "Tin tức" : (item.the_loai == 2 ? "Truyện ngắn" : "Tiểu thuyết")}}</td>
+                <td>{{item.ngay_dang | date : 'dd/MM/yyyy'}}</td>
+                <td>
+                    <a href="#!/detail/{{item.id}}">
+                        <button class="btn btn-warning">Xem chi tiết</button>
+                    </a>
+                    <button class="btn btn-danger" ng-click="deletePost(item.id)">Xóa</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#!/add">
+            <button class="btn btn-outline-success">Thêm bài viết mới</button>
+          </a>
+    </div>
+  </div>

@@ -1,0 +1,36 @@
+{
+  "post": [
+    {
+      "id": "1",
+      "tieu_de": "Qua môn rất khó",
+      "noi_dung": "Tâm lý học đường",
+      "tac_gia": "Xoài",
+      "the_loai": "3",
+      "ngay_dang": "23/02/2024"
+    },
+    {
+      "id": "3",
+      "tieu_de": "Cuộc sống học tập của Hoài Thu",
+      "noi_dung": "Stress",
+      "tac_gia": "Mận",
+      "the_loai": "1",
+      "ngay_dang": "28/01/2024"
+    },
+    {
+      "id": "4",
+      "tieu_de": "Sự khó khăn của học lại DA1",
+      "noi_dung": "Tâm lý học đường",
+      "tac_gia": "Táo",
+      "the_loai": "1",
+      "ngay_dang": "11/12/2023"
+    },
+    {
+      "tieu_de": "Tình yêu và sự thất bại",
+      "noi_dung": "jwkdnms",
+      "tac_gia": "sdbjh",
+      "the_loai": "3",
+      "ngay_dang": "2024-02-13T17:00:00.000Z",
+      "id": "50b7"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<div class="card mt-4">
+    <h3 class="card-header">{{titleAdd}}</h3>
+    <div class="card-body">
+        <form ng-submit="createPost()">
+            <label for="" class="form-label">Tiêu đề</label>
+            <input type="text" class="form-control" ng-model="post.tieu_de">
+            <p ng-if="check.tieu_de" class="text-danger">Vui lòng nhập tiêu đề</p>
+
+            <label for="" class="form-label">Nội dung</label>
+            <input type="text" class="form-control" ng-model="post.noi_dung">
+            <p ng-if="check.noi_dung" class="text-danger">Vui lòng nhập nội dung</p>
+
+            <label for="" class="form-label">Tác giả</label>
+            <input type="text" class="form-control" ng-model="post.tac_gia">
+            <p ng-if="check.tac_gia" class="text-danger">Vui lòng nhập tác giả</p>
+
+            <label for="" class="form-label">Thể loại</label>
+            <select class="form-select" aria-label="Default select example" ng-model="post.the_loai">
+                <option selected>Lựa chọn</option>
+                <option value="1">Tin tức</option>
+                <option value="2">Truyện ngắn</option>
+                <option value="3">Tiểu thuyết</option>
+              </select>
+            <p ng-if="check.the_loai" class="text-danger">Vui lòng chọn thể loại</p>
+
+            <label for="" class="form-label">Ngày đăng</label>
+            <input type="date" class="form-control" ng-model="post.ngay_dang">
+            <p ng-if="check.ngay_dang" class="text-danger">Vui lòng chọn ngày đăng</p>
+
+            <button type="submit" class="btn btn-outline-success mt-4">Thêm bài viết mới</button>
+        </form>
+    </div>
+</div>

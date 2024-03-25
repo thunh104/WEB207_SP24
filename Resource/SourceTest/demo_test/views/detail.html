@@ -1,0 +1,30 @@
+<div class="card mt-4">
+    <h3 class="card-header">{{titleDetail}}</h3>
+    <div class="card-body">
+        <form>
+            <label for="" class="form-label">Tiêu đề</label>
+            <input type="text" class="form-control" ng-model="post.tieu_de" disabled>
+
+            <label for="" class="form-label">Nội dung</label>
+            <input type="text" class="form-control" ng-model="post.noi_dung" disabled>
+
+            <label for="" class="form-label">Tác giả</label>
+            <input type="text" class="form-control" ng-model="post.tac_gia" disabled>
+
+            <label for="" class="form-label">Thể loại</label>
+            <select class="form-select" aria-label="Default select example" ng-model="post.the_loai" disabled>
+                <option selected>Lựa chọn</option>
+                <option value="1">Tin tức</option>
+                <option value="2">Truyện ngắn</option>
+                <option value="3">Tiểu thuyết</option>
+            </select>
+
+            <label for="" class="form-label">Ngày đăng</label>
+            <input type="date" class="form-control" ng-model="post.ngay_dang" disabled>
+
+            <a href="#!update/{{post.id}}">
+                <button class="btn btn-outline-success mt-4">Chỉnh sửa thông tin</button>
+            </a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="card mt-4">
+  <h3 class="card-header">{{titleAdd}}</h3>
+  <div class="card-body">
+    <form ng-submit="createStaff()">
+      <label for="" class="form-label">Họ và tên</label>
+      <input type="text" class="form-control" ng-model="staff.hoTen">
+      <p ng-if="check.hoTen" class="text-danger">Vui lòng nhập họ tên</p>
+
+      <label for="" class="form-label">Số điện thoại</label>
+      <input type="text" class="form-control" ng-model="staff.sdt">
+      <p ng-if="check.sdt" class="text-danger">Vui lòng nhập số điện thoại</p>
+
+      <label for="" class="form-label">Email</label>
+      <input type="text" class="form-control" ng-model="staff.email">
+      <p ng-if="check.email" class="text-danger">Vui lòng nhập email</p>
+
+      <label for="" class="form-label">Chức vụ</label>
+      <select class="form-select" aria-label="Default select example" ng-model="staff.chuc_vu">
+        <option selected>Lựa chọn</option>
+        <option value="1">Nhân viên</option>
+        <option value="2">Trưởng phòng</option>
+        <option value="3">Giám đốc</option>
+      </select>
+      <p ng-if="check.chuc_vu" class="text-danger">Vui lòng chọn chức vụ</p>
+
+      <label for="" class="form-label">Ngày sinh</label>
+      <input type="date" class="form-control" ng-model="staff.ngay_sinh">
+      <p ng-if="check.ngay_sinh" class="text-danger">Vui lòng chọn ngày sinh</p>
+
+      <button class="btn btn-outline-success mt-4" type="submit">Lưu thông tin</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+{
+  "staff": [
+    {
+      "hoTen": "Xoàiabc",
+      "sdt": "0977678771",
+      "email": "xoaiabc@gmail.com",
+      "chuc_vu": "1",
+      "ngay_sinh": "2003-12-05T17:00:00.000Z",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "hoTen": "Chanh",
+      "sdt": "0366754975",
+      "email": "chanhabc@gmail.com",
+      "chuc_vu": "3",
+      "ngay_sinh": "27/02/2001"
+    },
+    {
+      "hoTen": "Dâu",
+      "sdt": "0988776981",
+      "email": "daunpm@gmail.com",
+      "chuc_vu": "2",
+      "ngay_sinh": "2024-01-27T17:00:00.000Z",
+      "id": "3001"
+    },
+    {
+      "id": "43c9",
+      "hoTen": "Mận",
+      "sdt": "0987654321",
+      "email": "manqsj@gmail.com",
+      "chuc_vu": "1",
+      "ngay_sinh": "2024-01-18T17:00:00.000Z"
+    },
+    {
+      "hoTen": "Táo",
+      "sdt": "0376558965",
+      "email": "tacnsg@gmail.com",
+      "chuc_vu": "3",
+      "ngay_sinh": "2024-02-06T17:00:00.000Z",
+      "id": "55b6"
+    },
+    {
+      "id": "e494",
+      "hoTen": "Xoai Xinh",
+      "sdt": "0988791544",
+      "email": "xoaixinh@gmail.com",
+      "chuc_vu": "2",
+      "ngay_sinh": "2024-02-14T17:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "ma_sp": "SP0012222",
+      "ten": "Áo sơ mi2222",
+      "loai": "Đồ nữ",
+      "gia": "300000333",
+      "id": "1"
+    },
+    {
+      "ma_sp": "SP002",
+      "ten": "Quần ống suông",
+      "loai": "Đồ nữ",
+      "gia": "250000",
+      "id": "2"
+    },
+    {
+      "ma_sp": "dd",
+      "ten": "ddddd",
+      "loai": "Đồ nam",
+      "gia": "8",
+      "id": "9133"
+    },
+    {
+      "id": "b80a",
+      "ma_sp": "asdsasd",
+      "ten": "asdasd",
+      "loai": "Đồ nữ",
+      "gia": "12"
+    },
+    {
+      "id": "fe5e",
+      "ma_sp": "asdasd",
+      "ten": "sadasd",
+      "loai": "Đồ nữ",
+      "gia": "123"
+    }
+  ]
+}
